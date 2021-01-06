@@ -1,0 +1,16 @@
+package huffmanEncoder;
+
+import huffmanEncoder.HuffmanEncoder.HuffmanEncodedResult;
+
+public class Client {
+
+	public static void main(String[] args) {
+		final String test = "ab ab cab";
+		final HuffmanEncoder encoder = new HuffmanEncoder();
+		final HuffmanEncodedResult result = encoder.compress(test);
+		System.out.println(result.encodedData);
+		System.out.println(encoder.decompress(result));
+
+	}
+
+}
